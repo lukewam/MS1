@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leet Code Academy – Course Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-inner">
+        <div class="logo-block">
+          LCA
+        </div>
+        <div class="title-block">
+          <h1>Leet Code Academy</h1>
+          <h2>Division of Computing & Algorithmic Studies</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="catalog.html">Course Catalog</a></li>
+        <li><a href="#">CampusGuide Chat</a></li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content-wrapper">
+      <div class="left-column">
+
+        <div class="hero-box">
+          <h3>Course Catalog – Computing & Algorithmic Studies</h3>
+          <p>
+            Below is the current list of undergraduate and foundational graduate-level computing courses
+            offered by the Division of Computing & Algorithmic Studies at Leet Code Academy.
+          </p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="section">
+          <h4>Search Courses</h4>
+          <p class="small-note">
+            Enter a course code (e.g., CSE 100).
+          </p>
+          <input
+            type="text"
+            id="course-search"
+            placeholder="Search by course code"
+            style="width: 60%; padding: 6px; border: 1px solid #bcb6a4; font-family: 'Times New Roman', serif; font-size: 14px;"
+          >
+          <button
+            type="button"
+            onclick="searchCourse()"
+            style="padding: 6px 10px; margin-left: 6px; border: 1px solid #990000; background: #ffffff; color: #990000; font-size: 13px; text-transform: uppercase; cursor: pointer;"
+          >
+            Search
+          </button>
+          <div id="search-result" class="small-note" style="margin-top: 8px;"></div>
+        </div>
+
+        <!-- Course Listings -->
+        <div class="section">
+          <h4>Lower Division Courses</h4>
+
+          <p><strong>CSE 8A – Introduction to Programming I</strong><br>
+          Fundamentals of progra<b>m</b>ming using Python. Basic control flow, functions, data types, and problem decomposition. Designed for students with little to no programming experience.</p>
+
+          <p><strong>CSE 8B – Introduction to Programming II</strong><br>
+          Continuation of 8A with an emphasis on structured programming, modular code design,
+          and debugging techniques. Introduces larger-scale program organization.</p>
+
+          <p><strong>CSE 12 – Advanced Data Structures</strong><br>
+          Implementation and analysis of essential structures such as stacks, queues, trees, heaps,
+          hash maps, and graphs. Emphasis on memory models, runtime trade-offs, and algorithmic efficiency.</p>
+
+          <p><strong>CSE 15L – Software Tools & Practices</strong><br>
+          Practical introduction to software development tools including version control, build systems,
+          testing frameworks, and shell environments. Focus on workflow and reproducibility.</p>
+
+          <p><strong>CSE 30 – Computer Organization</strong><br>
+          Overview of hardware/software boundaries. Covers machine instructions, calling conventions,
+          assembly programming, and basic architecture concepts.</p>
+        </div>
+
+        <div class="section">
+          <h4>Upper Division Courses</h4>
+
+          <p><strong>CSE 100 – Advanced Data Structures & Algorithms</strong><br>
+          Classical algorithmic techniques including divid<b>e</b>-and-conquer, dynamic programming, greedy methods,
+          and amortized analysis. Large programming projects emphasize performance engineering.</p>
+
+          <p><strong>CSE 101 – Design & Analysis of Algorithms</strong><br>
+          Formal study of algorithmic complexity and correctness. Graph algorithms, NP-completeness, reductions,
+          approximation strategies, and algorithmic problem classification.</p>
+
+          <p><strong>CSE 105 – Theory of Computation</strong><br>
+          Foundations of computation including automata theory, formal languages, decidability,
+          and computational complexity. Introduces Turing machines and fundamental limits of computation.</p>
+
+          <p><strong>CSE 110 – Software Engineering Principles</strong><br>
+          Introduction to software engineering as a discipline. Project management, design patterns,
+          requirements analysis, testing methodologies, and collaborative development practices.</p>
+
+          <p><strong>CSE 120 – Operating Systems</strong><br>
+          Core OS concepts including processes, threads, synchronization, virtual memory,
+          file systems, and scheduling. Students implement components of a simplified operating system.</p>
+
+          <p><strong>CSE 130 – Programming Languages</strong><br>
+          Survey of programming language paradigms: functional, imperative, object-oriented,
+          and logic programming. Includes interpreter construction and type system fundamentals.</p>
+
+          <p><strong>CSE 131 – Compiler Construction</strong><br>
+          Principles of compilation including lexical analysis, parsing, semantic checking,
+          intermediate representations, optimization, and code generation.</p>
+
+          <p><strong>CSE 140 – Digital Logic & Systems</strong><br>
+          Boolean algebra, combinational logic, sequential circuits, and the design of digital systems.
+          Lab component includes building and simulating hardware structures.</p>
+
+          <p><strong>CSE 141 – Computer Architecture</strong><br>
+          Processor design, pipelining, memory hierarchies, instruction sets, and performance evaluation.
+          Students explore architectural trade-offs through simulation.</p>
+        </div>
+
+        <div class="section">
+          <h4>Special Topic & Interdisciplinary Courses</h4>
+
+          <p><strong>CSE 150 – Introduction to Artificial Intelligence</strong><br>
+          Survey of foundational AI topics including search, probability, decision-making,
+          and learning. Emphasis on conceptual grounding and practical applications.</p>
+
+          <p><strong>CSE 151 – Machine Learning Systems</strong><br>
+          Algorithms and theory behind supervised and unsupervised learning, model generalization,
+          gradient methods, and evaluation strategies.</p>
+
+          <p><strong>CSE 170 – Human-Computer Interaction</strong><br>
+          Principles of interaction design, usability testing, prototyping, and human-centered research methods.</p>
+
+          <p><strong>CSE 180 – Data Management & Databases</strong><br>
+          Relational modeling, SQL, indexing strategies, transactions, concurrency control,
+          and database-backed application development.</p>
+
+          <p><strong>CSE 191 – Independent Study in Computing</strong><br>
+          Students pursue research or project-based independent study under the guidance of a faculty advisor.</p>
+
+           <p><strong><a href="PHIL100.html">PHIL 100 – Introduction to Absurdism: The Myth of Sisyphus</a></strong><br>
+          A philosophical exploration of Albert Camus’ concept of the absurd and its implications for
+          modern life, work, and meaning. Topics include: the tension between human desire for clarity
+          and the silent indifference of the world; Camus’ critique of hope, religion, and metaphysical
+          comfort; the figure of Sisyphus as an emblem of defiant existence; and the idea of “revolt”
+          as an active stance toward an absurd reality. Students examine how absurdist thought influences
+          contemporary discussions of labor, technology, individualism, and meaning-making.</p>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <div class="sidebar-box">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Division Home</a></li>
+            <li><a href="#">Admissions Requirements</a></li>
+            <li><a href="#">Prospective Student Info</a></li>
+            <li><a href="#">Advising Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Contact Information</h5>
+          <p class="small-note">
+            leetcodeacademy@gmail.com<br>
+            3237050256<br>
+            John Smith
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; <span id="year"></span> Leet Code Academy — Division of Computing & Algorithmic Studies.
+    </div>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    function searchCourse() {
+      const inputEl = document.getElementById("course-search");
+      const resultEl = document.getElementById("search-result");
+      let value = inputEl.value.trim();
+
+      if (!value) {
+        resultEl.textContent = "";
+        return;
+      }
+
+      // Normalize: remove extra spaces and uppercase
+      value = value.toUpperCase().replace(/\s+/g, " ");
+
+      if (value === "CSE 1A" || value === "CSE1A") {
+        // Special easter egg: bold "n"
+        resultEl.innerHTML = "<strong>n</strong>o class found";
+      } else {
+        resultEl.textContent = "No matching course found.";
+      }
+    }
+
+    // Optional: allow pressing Enter to trigger search
+    document.getElementById("course-search").addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        searchCourse();
+      }
+    });
+  </script>
+
+</body>
+</html>

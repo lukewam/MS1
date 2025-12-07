@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leet Code Academy – Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .portal-wrapper {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 20px;
+      background: #f9f5ec;
+      border: 1px solid #d3c8b2;
+    }
+
+    .portal-wrapper h3 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #990000;
+      text-align: center;
+    }
+
+    .portal-wrapper label {
+      display: block;
+      font-size: 14px;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    .portal-wrapper input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #bcb6a4;
+      background: #ffffff;
+      font-size: 14px;
+      font-family: "Times New Roman", serif;
+    }
+
+    .portal-wrapper button {
+      margin-top: 16px;
+      width: 100%;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid #990000;
+      color: #990000;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .portal-wrapper button:hover {
+      background: #f0e4da;
+    }
+
+    #error-msg {
+      color: #990000;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 13px;
+      display: none;
+    }
+
+    /* Centered floating iframe */
+    #chatframe-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 55%;
+      height: 55%;
+      background: rgba(255, 255, 255, 0.95);
+      border: 2px solid #990000;
+      box-shadow: 0 0 18px rgba(0,0,0,0.25);
+      z-index: 9999;
+    }
+
+    #chatframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Login Box -->
+  <div id="login-box" class="portal-wrapper">
+    <h3>Student Portal Login</h3>
+
+    <label>Username</label>
+    <input type="text" id="username" placeholder="Enter username">
+
+    <label>Password</label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <button onclick="validateLogin()">Log In</button>
+
+    <div id="error-msg">Incorrect username or password.</div>
+  </div>
+
+  <!-- Floating Center Iframe Container -->
+  <div id="chatframe-container">
+    <iframe
+      id="chatframe"
+      src="https://www.chatbase.co/chatbot-iframe/X4PYWHrxT1oGL3pOSkKne"
+      frameborder="0">
+    </iframe>
+  </div>
+
+  <script>
+    function validateLogin() {
+      const correctUser = ""; // empty username
+      const correctPass = "bWVhbmluZw==";
+
+      const user = document.getElementById("username").value.trim();
+      const pass = document.getElementById("password").value;
+
+      if (user === correctUser && pass === correctPass) {
+        document.getElementById("login-box").style.display = "none";
+        document.getElementById("chatframe-container").style.display = "block";
+      } else {
+        document.getElementById("error-msg").style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>

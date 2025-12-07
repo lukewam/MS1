@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leet Code Academy – Division of Computing & Algorithmic Studies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    
+    <!-- Header -->
+    <div class="header">
+      <div class="header-inner">
+        <div class="logo-block">
+          LCA
+        </div>
+        <div class="title-block">
+          <h1>Leet Code Academy</h1>
+          <h2>Division of Computing & Algorithmic Studies</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Course Catalog</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Student Resources</a></li>
+        <li><a href="#">CampusGuide Chat</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="hero-box">
+          <h3>Welcome to the Computing Program</h3>
+          <p>
+            The Division of Computing & Algorithmic Studies at <strong>Leet Code Academy</strong> provides
+            a comprehensive education in modern computational thinking. Our curriculum emphasizes both
+            technical proficiency and reflective engagement with the role of computing in contemporary life.
+          </p>
+          <p>
+            Students in our program gain experience with foundational algorithms, data structures, software
+            development, and emerging perspectives on the social and ethical dimensions of technology.
+            We encourage thoughtful exploration, curiosity, and open dialogue about the evolving purpose
+            of computing in the world today.
+          </p>
+        </div>
+
+        <div class="section">
+          <h4>About the Division</h4>
+          <p>
+            The Division integrates classical computer science instruction with broader studies
+            of systems, logic, and human-centered design. Our faculty come from diverse engineering,
+            research, and interdisciplinary backgrounds.
+          </p>
+          <p>
+            Students are supported not only in technical growth, but in developing critical perspectives
+            on the meaning, impact, and purpose of computing as a discipline.
+          </p>
+        </div>
+
+        <div class="section">
+          <h4>CampusGuide Advising Assistant</h4>
+          <p>
+            <strong>CampusGuide</strong> is our virtual advising assistant designed to support student success.
+            It engages students in reflective conversation about academic interests, study habits, long-term
+            goals, and personal experience in the program.
+          </p>
+          <p>
+            Students are welcome to explore the chat feature for general guidance and dialogue.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <div class="sidebar-box">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="catalog.html">Course Catalog</a></li>
+            <li><a href="portal.html">Student Portal</a></li>
+            <li><a href="#">Prospective Students</a></li>
+            <li><a href="#">Advising Appointments</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Announcements</h5>
+          <ul>
+            <li>Spring Registration opens next week.</li>
+            <li>CampusGuide Advising Beta is now available.</li>
+            <li>Updated faculty office hours posted.</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Academic Focus Areas</h5>
+          <ul>
+            <li>Algorithms & Data Structures</li>
+            <li>Software Systems</li>
+            <li>Human-Centered Computing</li>
+            <li>Technology & Society</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Contact Information</h5>
+          <p class="small-note">
+            leetcodeacademy@gmail.com<br>
+            3237050256<br>
+            John Smith
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; <span id="year"></span> Leet Code Academy — Division of Computing & Algorithmic Studies.
+    </div>
+
+  </div>
+
+  <!-- Year Auto-fill -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Chatbase Widget -->
+  <script>
+  (function(){
+    if(!window.chatbase || window.chatbase("getState") !== "initialized") {
+      window.chatbase = (...arguments) => {
+        if (!window.chatbase.q) window.chatbase.q = [];
+        window.chatbase.q.push(arguments);
+      };
+      window.chatbase = new Proxy(window.chatbase, {
+        get(target, prop) {
+          if (prop === "q") return target.q;
+          return (...args) => target(prop, ...args);
+        }
+      });
+    }
+
+    const onLoad = function() {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "skWww3_hVMJ6GLWlU3YL5";
+      script.domain = "www.chatbase.co";
+      document.body.appendChild(script);
+    };
+
+    if (document.readyState === "complete") onLoad();
+    else window.addEventListener("load", onLoad);
+  })();
+  </script>
+
+</body>
+</html>
